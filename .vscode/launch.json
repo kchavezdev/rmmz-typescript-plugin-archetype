@@ -9,7 +9,7 @@
                 "<node_internals>/**"
             ],
             "webRoot": "${workspaceFolder}\\..\\..",
-            "nwjsVersion": "0.44.5",
+            "nwjsVersion": "0.48.4",
             "preLaunchTask": "Build plugin"
         }
     ]
