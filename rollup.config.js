@@ -1,7 +1,6 @@
 import typescript from '@rollup/plugin-typescript';
 
 import { terser } from 'rollup-plugin-terser';
-import externalGlobals from "rollup-plugin-external-globals";
 
 import { readFileSync } from 'fs';
 
@@ -28,7 +27,10 @@ export default [
                         }
                     })
                 ],
-                generatedCode: 'es2015'
+                generatedCode: 'es2015',
+                globals: {
+                    'rmmz-types': 'window'
+                }
             },
             {
                 file: `${pkg.testProjectDir || `${__dirname}/dist`}/js/plugins/${pkg.name}.debug.js`,
@@ -36,14 +38,14 @@ export default [
                 format: 'iife',
                 sourcemap: true,
                 banner: header,
-                generatedCode: 'es2015'
+                generatedCode: 'es2015',
+                globals: {
+                    'rmmz-types': 'window'
+                }
             }
         ],
         plugins: [
-            typescript(),
-            externalGlobals({
-                "rmmz-types": "window"
-            })
+            typescript()
         ]
 	}
 ];
