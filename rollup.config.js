@@ -27,14 +27,16 @@ export default [
                             preamble: header
                         }
                     })
-                ]
+                ],
+                generatedCode: 'es2015'
             },
             {
                 file: `${pkg.testProjectDir || `${__dirname}/dist`}/js/plugins/${pkg.name}.debug.js`,
                 name: pkg.namespace,
                 format: 'iife',
                 sourcemap: true,
-                banner: header
+                banner: header,
+                generatedCode: 'es2015'
             }
         ],
         plugins: [
