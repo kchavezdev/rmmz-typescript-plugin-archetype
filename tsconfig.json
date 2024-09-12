@@ -6,7 +6,8 @@
         "downlevelIteration": true,
         "removeComments": true,
         "strictNullChecks": true,
-        "baseUrl": "src"
+        "baseUrl": "src",
+        "moduleResolution": "Node"
     },
     "include": ["src/**/*", "spec/**/*"],
     "exclude": ["node_modules"]
