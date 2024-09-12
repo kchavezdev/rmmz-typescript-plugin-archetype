@@ -40,7 +40,7 @@ export default [
         plugins: [
             typescript(),
             externalGlobals({
-                "rmmz": "window"
+                "rmmz-types": "window"
             })
         ]
 	}
