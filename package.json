@@ -37,5 +37,11 @@
     "ts-node": "^9.1.1",
     "tslib": "^2.4.0",
     "typescript": "^4.7.4"
+  },
+  "overrides": {
+    "rmmz-types": {
+      "localforage": "1.7.3",
+      "pixi.js": "5.2.4"
+    }
   }
 }
