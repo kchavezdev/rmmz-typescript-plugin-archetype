@@ -1,13 +1,12 @@
 {
     "compilerOptions": {
         "esModuleInterop": true,
-        "target": "ES6",
+        "target": "ES5",
         "lib": ["ES5", "ES6", "DOM"],
         "downlevelIteration": true,
         "removeComments": true,
         "strictNullChecks": true,
-        "baseUrl": "src",
-        "types": ["rmmz-types"]
+        "baseUrl": "src"
     },
     "include": ["src/**/*", "spec/**/*"],
     "exclude": ["node_modules"]
