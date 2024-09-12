@@ -1,6 +1,6 @@
-import * as rmmz from 'rmmz';
+import { $dataSystem } from 'rmmz-types';
 
 export function sayHi(): void
 {
-    console.log(`Hello ${rmmz.$dataSystem.gameTitle}!`);
+    console.log(`Hello ${$dataSystem.gameTitle}!`);
 }
