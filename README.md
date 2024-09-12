@@ -4,6 +4,12 @@ This is a template repository for writing Typescript plugins for RPG Maker MZ.
 The main purpose here is to set a basis from which other repositories can
 derive from and more easily be ready to start actual development.
 
+This template was forked from 
+[typescript-plugin-archetype](https://github.com/comuns-rpgmaker/typescript-plugin-archetype) 
+by [comuns-rpgmaker](https://github.com/comuns-rpgmaker) and has been altered to 
+remove the dependency on niokasgami's RPG Maker MZ TypeScript definitions. Instead, 
+this fork uses [iVilja's TypeScript definitions](https://github.com/iVilja/rmmz-types), 
+as they are more complete at the time of writing.
 
 ## Getting Started
 
